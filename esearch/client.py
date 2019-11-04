@@ -12,6 +12,7 @@ def es_draft():
         {'host':'localhost', 'port':'9200'}
     ])
 
+
     # https://elasticsearch-py.readthedocs.io/en/7.0.1/api.html#cat
     response = es.cat.health(v=True, format='json')
     print(response[0])
